@@ -123,3 +123,57 @@
 .animate-float-fast { animation: float-fast 4s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 5s ease-in-out infinite; }
 .animate-marquee { animation: marquee 35s linear infinite; }
+
+/* SEO landing page styling */
+.seo-site { font-family: var(--font-sans); background-color: var(--color-background); color: var(--color-foreground); }
+.seo-site h1, .seo-site h2, .seo-site h3, .seo-site h4 { font-family: var(--font-display); letter-spacing: -.035em; font-weight: 800; }
+body [class~="text-[8px]"], body [class~="text-[9px]"], body [class~="text-[10px]"], body [class~="text-[11px]"] { font-size: 12px !important; }
+.seo-hero { background: var(--gradient-hero); }
+.seo-title { color: var(--cream); }
+.seo-title span { color: var(--copper); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 17px; }
+.seo-orbit { position: absolute; pointer-events: none; border: 3px solid rgba(194, 205, 199, .075); border-radius: 9999px; }
+.seo-orbit-one { width: 570px; height: 570px; right: -120px; top: -130px; }
+.seo-orbit-two { width: 480px; height: 480px; right: 255px; top: -220px; }
+.seo-orbit-three { width: 380px; height: 380px; left: -150px; bottom: -200px; }
+.seo-label { display: block; margin-bottom: 17px; color: var(--color-muted-foreground); font-size: 12px; }
+.seo-label input, .seo-label select, .seo-label textarea { display: block; width: 100%; margin-top: 5px; border: 1px solid var(--color-input); border-radius: 13px; background: var(--color-background); padding: 12px 13px; color: var(--color-foreground); outline: none; transition: border-color .2s, background .2s; }
+.seo-label input, .seo-label select { height: 45px; }
+.seo-label input:focus, .seo-label select:focus, .seo-label textarea:focus { border-color: var(--color-ring); background: color-mix(in oklab, var(--color-background) 92%, var(--copper)); }
+.seo-label input::placeholder { color: var(--color-muted-foreground); }
+.seo-label select:invalid { color: var(--color-muted-foreground); }
+.seo-label option { color: var(--color-foreground); }
+.seo-site .service-selector-panel > p:not(.mt-4) { font-size: 10px; }
+.seo-site .service-selector-panel > p.mt-4 { font-size: 16px; }
+.seo-site .service-selector-panel > div p { font-size: 14px; line-height: 1.6; }
+.seo-site .service-selector-panel > div > p { font-size: 14px; }
+.seo-site .service-selector-panel > h3 { font-size: 30px; }
+.seo-site .service-selector-panel h4 { font-size: 16px; }
+.seo-site .service-detail-card p, .seo-site .service-detail-card li { font-size: 14px; line-height: 1.65; }
+@media (min-width: 768px) {
+  .seo-site .service-detail-card p, .seo-site .service-detail-card li { font-size: 16px; }
+  .seo-site .service-selector-panel > div p { font-size: 16px; }
+}
+.service-case-art i { position: absolute; width: 75px; height: 75px; border: 1px solid rgba(238, 224, 201, .22); border-radius: 999px; }
+.service-case-art i:nth-of-type(1) { left: 28%; top: 28%; }
+.service-case-art i:nth-of-type(2) { left: 43%; top: 35%; border-color: rgba(191, 117, 65, .45); }
+.service-case-art i:nth-of-type(3) { left: 58%; top: 45%; width: 58px; height: 58px; }
+.service-video-orbit { position: absolute; inset: -15% 10%; border: 1px solid rgba(238, 224, 201, .16); border-radius: 50%; box-shadow: 0 0 0 28px rgba(238,224,201,.025), 0 0 0 65px rgba(238,224,201,.025); }
+.service-team-sticky { position: sticky; top: 120px; height: min(82vh, 850px); min-height: 540px; }
+.service-detail-card { margin-top: 23px; }
+.service-detail-icon { outline: 10px solid var(--color-background); }
+.service-selector-panel { min-height: 400px; }
+.service-timeline { position: relative; padding: 0 0 1px; }
+.service-timeline::before { position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: color-mix(in oklab, var(--copper) 40%, transparent); content: ""; }
+.seo-cta .seo-orbit-one { top: -180px; right: calc(50% - 210px); width: 420px; height: 420px; }
+@media (max-width: 640px) {
+  .seo-title span { text-underline-offset: 9px; }
+  .seo-form { padding: 22px 18px; }
+  .seo-orbit-one { right: -370px; }
+  .seo-orbit-two { right: -320px; }
+  .service-timeline { padding-left: 30px; }
+  .service-timeline::before { left: 13px; }
+  .service-timeline article { width: 100%; margin: 0 0 14px; text-align: left; }
+  .service-timeline article > span { left: -31px; right: auto; }
+  .service-team-sticky { position: relative; top: auto; height: min(120vw, 620px); min-height: 360px; }
+  .service-selector-panel { min-height: 0; }
+}
